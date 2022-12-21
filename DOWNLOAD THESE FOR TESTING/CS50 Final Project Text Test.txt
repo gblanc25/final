@@ -1,0 +1,33 @@
+Hi there! Here’s a test text file that you can use to test my SpeedReader. If you select “include last line of paragraphs”, you should see this sentence!
+
+If you select “include first line of paragraphs”, you should see this sentence. But you shouldn’t see this sentence, unless you input a keyword that happens to be in it. You can even include multiple keywords!
+
+Let’s try out some keywords. Normally, you wouldn’t see this sentence, but you would with the keyword computer. You also wouldn’t see this one, but you would with the keyword apple. Keywords are case insensitive, by the way. 
+
+My algorithm works by breaking apart a text by paragraphs, meaning you should see all of the following if you have either “first lines” or “last lines” selected.
+
+This should be there (1).
+
+As should this (2).
+
+And this (3)! 
+
+My algorithm then separates sentences by periods, with some hardcoded exceptions. For instance, all of the following should appear as one line with “first lines” or “last lines” clicked. 
+
+Gabe’s parents are Mr. and Mrs. LeBlanc. 
+
+Did Dr. Martin earn their doctorate in 2019? 
+
+Gabe scored a 95.75 on his chemistry test!
+
+What were to happen if you were to upload this text as a non-PDF or non-TXT document? You’d be redirected to an error page that would prompt you to re-upload a file. 
+
+One final note about keywords – you can use more than one at once, so long as they are separated by commas in the keyword box! 
+
+Type in “apple, computer” WITHOUT checking “last” or “first” lines and both sentences from the next paragraph should still show up!
+
+I grabbed an apple from Annenberg. But then I realized I forgot my computer in my dorm!
+
+Thanks for checking out my final project!
+
+ 

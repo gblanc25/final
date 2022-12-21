@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>SPEEDREADER</title>
+        <link href="static/styles.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <div class="title">
+            <h1>CS50 SpeedReader</h1>
+            <h4>Turn your assigned reading into easy-to-read notes!</h4>
+        </div>
+
+        <main>
+            {% block error %}{% endblock %}
+        </main>
+
+        <p>
+             
+        </p>
+        <img src="/static/instructions.png" width="60%" class="container" alt="upload pdf or text file, select included content, download text file">
+
+        <form action="/success" method="post" enctype="multipart/form-data" class="body">
+            <h3>Upload File Here!</h3>
+            <input type="file" id="original" name="original" accept=".pdf, .txt" required></input>
+            <input type="submit" value="Submit"></input>
+            <p>
+
+            </p>
+            <input type="checkbox" id="cb1" name="cb1">
+            <label for="cb1">Include First Line of Paragraphs</label><br>
+            <input type="checkbox" id="cb2" name="cb2" checked="true">
+            <label for="cb2">Include Last Line of Paragraphs</label><br>
+            <input type="checkbox" id="cb3" name="cb3">
+            <label for="cb3">Include the following keywords:</label><br>
+            <p>
+                 
+            </p>
+            <input type="text" id="keywords" name="keywords" placeholder="Keywords, use commas">
+        </form>
+
+        <h3 id="processing" class="body" hidden="true">Processing...</h1>
+        <script>
+            document.querySelector('form').addEventListener('submit', function() {
+            document.getElementById('processing').removeAttribute("hidden");
+            });
+        </script>
+
+        <main>
+            {% block download %}{% endblock %}
+        </main>
+
+        <div class="body">
+            <h5>Gabe LeBlanc | CS50 Fall 2021</h5>
+            <h6>Images courtesy of OIML.org, IconArchive.com, and IconExperience.com</h6>
+        </div>
+
+    </body>

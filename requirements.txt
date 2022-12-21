@@ -1,0 +1,6 @@
+cs50
+Flask
+Flask-Session
+pdfminer
+pdfminer.six
+io
